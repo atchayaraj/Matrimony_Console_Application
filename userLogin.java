@@ -12,10 +12,10 @@ class userLogin{
 		System.out.println("Enter the Password : ");
 		databaseInt di = new dataBase();
 		flag = di.checkUserLoginCredentials(userName,passWord);
-		if(flag==true) {
+		if(flag) {
 			System.out.println("You successfully loged-in ");
 			flag=di.checkUserIsExisting(userName);
-			if(flag==true)
+			if(flag)
 			{
 				userChoice();
 			}
